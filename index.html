@@ -152,6 +152,89 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Hexo搭建博客常见问题汇总-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/08/Hexo搭建博客常见问题汇总-1/">Hexo搭建博客常见问题汇总</a>
+    </h1>
+  
+
+        
+        <a href="/2018/05/08/Hexo搭建博客常见问题汇总-1/" class="archive-article-date">
+  	<time datetime="2018-05-08T10:02:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>虽然现在早就不再是博客的时代了，但是一直都想搭个自己的博客网站，有个专属自己地方能分享记录自己的思考，资源和学习成果，可以把琐碎的东西总结归纳然后写出来。刚好GitHub可以免费提供服务器，就百度了下Github博客搭建，网上很多Hexo+Github搭建博客的文章。如题，这篇文章的目的并不是讲解如何搭建一个Hexo博客，而是记录我在搭建博客过程中遇到的问题，并给出我的解决方法。 </p>
+<h2 id="前期工作"><a href="#前期工作" class="headerlink" title="前期工作"></a>前期工作</h2><p>####<a href="https://nodejs.org/en/download/current/" target="_blank" rel="noopener">node.js安装</a></p>
+<p>####<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git安装</a></p>
+<p>####<a href="https://github.com/" target="_blank" rel="noopener">Github账户注册</a></p>
+<p>####<a href="https://www.cnblogs.com/fengxiongZz/p/7707219.html" target="_blank" rel="noopener">软件安装完成可以参考这篇文章检查下是否正确</a></p>
+<p>##常见问题</p>
+<p>####问题1<br>Github账户注册和新建项目，项目必须要遵守格式：账户名.github.io，不然接下来会有很多麻烦。并且需要勾选Initialize this repository with a README<br><img src="https://ws1.sinaimg.cn/large/d7c2c7e3gy1fr42d7typtj20y00kmmyb.jpg" alt="icon1"></p>
+<p>####问题2<br>绑定域名,要使用SSH而不要用Https。打开Github，点击Downloader可以得到下面的地址。<br><img src="https://ws1.sinaimg.cn/large/d7c2c7e3gy1fr42g08f8mj20i307odg5.jpg" alt="icon2"><br>修改_config.yml<br><img src="https://ws1.sinaimg.cn/large/d7c2c7e3gy1fr42i9lbfjj20ge041mx2.jpg" alt="icon3"></p>
+<p>####问题3<br>输入cd ~/.ssh，检查不到.ssh的文件夹。我卡在这好久，以为什么东西没有安装好。后来发现，要在Desktop下生成才可以，在Hexo下无效。<br>具体可以参考<a href="https://blog.csdn.net/meimeilive/article/details/80076394" target="_blank" rel="noopener">Git /.ssh</a></p>
+<p>回看一下好像也没什么难的，一步步按着教程来就可以了，有什么不懂的网上查一下就OK了。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/05/08/Hexo搭建博客常见问题汇总-1/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -314,6 +397,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
