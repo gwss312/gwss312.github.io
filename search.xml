@@ -24,6 +24,18 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Android知识图谱]]></title>
+    <url>%2F2018%2F05%2F09%2FAndroid%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>Android开发</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+        <tag>android</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo搭建博客常见问题汇总]]></title>
     <url>%2F2018%2F05%2F08%2FHexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB%2F</url>
     <content type="text"><![CDATA[虽然现在早就不再是博客的时代了，但是一直都想搭个自己的博客网站，有个专属自己地方能分享记录自己的思考，资源和学习成果，可以把琐碎的东西总结归纳然后写出来。刚好GitHub可以免费提供服务器，就百度了下Github博客搭建，网上很多Hexo+Github搭建博客的文章。如题，这篇文章的目的并不是讲解如何搭建一个Hexo博客，而是记录我在搭建博客过程中遇到的问题，并给出我的解决方法。 前期工作node.js安装Git安装Github账户注册软件安装完成可以参考这篇文章检查下是否正确常见问题问题1Github账户注册和新建项目，项目必须要遵守格式：账户名.github.io，不然接下来会有很多麻烦。并且需要勾选Initialize this repository with a README 问题2绑定域名,要使用SSH而不要用Https。打开Github，点击Downloader可以得到下面的地址。修改_config.yml 问题3输入cd ~/.ssh，检查不到.ssh的文件夹。我卡在这好久，以为什么东西没有安装好。后来发现，要在Desktop下生成才可以，在Hexo下无效。具体可以参考Git /.ssh 回看一下好像也没什么难的，一步步按着教程来就可以了，有什么不懂的网上查一下就OK了。]]></content>
