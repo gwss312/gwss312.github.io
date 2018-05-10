@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[APK反编译]]></title>
+    <url>%2F2018%2F05%2F09%2FAPK%E5%8F%8D%E7%BC%96%E8%AF%91%2F</url>
+    <content type="text"><![CDATA[在学习Android开发的过程你，你往往会去借鉴别人的应用是怎么开发的，那些漂亮的动画和精致的布局可能会让你爱不释手，作为一个开发者，你可能会很想知道这些效果界面是怎么去实现的。这时，你便可以对改应用的APK进行反编译查看。 下载工具：apkTool下载地址dex2jar下载地址jd-gui下载地址工具介绍：apktool作用：资源文件获取，可以提取出图片文件和布局文件进行使用查看 dex2jar作用：将apk反编译成java源码（classes.dex转化成jar文件） jd-gui作用：查看APK中classes.dex转化成出的jar文件，即源码文件 反编译流程获取资源文件将需要反编译的APK文件放到apktool文件夹下，打开命令行界面（运行-CMD） ，输入以下命令：java -jar apktool.jar d -f 1.apk 可以得到一个叫1的文件夹，打开后就是我们想要的资源文件 获取代码将要反编译的APK后缀名改为.rar或者 .zip，并解压，得到其中的classes.dex文件（它就是java文件编译再通过dx工具打包而成的），如下图所示： 将获取到的classes.dex放到之前解压出来的工具【dex2jar-2.0】文件夹内，如下图所示: 在命令行下定位到dex2jar.bat所在目录，输入&quot;d2j-dex2jar classes.dex&quot;，效果如下： dex2jar.bat classes.dex时，dex2jar.bat不是本地或外部命令。需要将dex2jar.bat加入到环境变量中。如下图： 运行jd_gui打开刚刚生成的classes-dex2jar.jar就能看到代码。如下图： 反编译软件Android Killer以上就“Android反编译”比较传统的教程。刚接触反编译的时候，我也是从这些教程慢慢学起的。在后来的学习过程中，我接触到比较方便操作的Android反编译。在这，我将使用的过程写下来，贡献给有需的朋友。 我推荐大家使用的Android反编译的软件是Android Killer。 其实这个软件就是对以上博客提到的操作进行一系列的封装。打开这个软件你就可以发现这些熟悉的反编译工具。 Android Killer下载地址 下载后直接运行exe就可以了，操作十分简便。这软件还有好多功能，在这不一一列出了，有兴趣的朋友自己慢慢摸索。]]></content>
+      <categories>
+        <category>Android开发</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+        <tag>android</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo搭建博客常见问题汇总]]></title>
+    <url>%2F2018%2F05%2F08%2FHexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB%2F</url>
+    <content type="text"><![CDATA[虽然现在早就不再是博客的时代了，但是一直都想搭个自己的博客网站，有个专属自己地方能分享记录自己的思考，资源和学习成果，可以把琐碎的东西总结归纳然后写出来。刚好GitHub可以免费提供服务器，就百度了下Github博客搭建，网上很多Hexo+Github搭建博客的文章。如题，这篇文章的目的并不是讲解如何搭建一个Hexo博客，而是记录我在搭建博客过程中遇到的问题，并给出我的解决方法。 前期工作node.js安装Git安装Github账户注册软件安装完成可以参考这篇文章检查下是否正确常见问题问题1Github账户注册和新建项目，项目必须要遵守格式：账户名.github.io，不然接下来会有很多麻烦。并且需要勾选Initialize this repository with a README 问题2绑定域名,要使用SSH而不要用Https。打开Github，点击Downloader可以得到下面的地址。修改_config.yml 问题3输入cd ~/.ssh，检查不到.ssh的文件夹。我卡在这好久，以为什么东西没有安装好。后来发现，要在Desktop下生成才可以，在Hexo下无效。具体可以参考Git /.ssh 回看一下好像也没什么难的，一步步按着教程来就可以了，有什么不懂的网上查一下就OK了。]]></content>
+      <tags>
+        <tag>随笔</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2018%2F05%2F08%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+</search>
